@@ -15,12 +15,12 @@ import java.util.Scanner;
  */
 public class ClassAssignment1 {
 
-    /**
-     * This main method contains the call to the calcAvg method
-     * used to calculate the average of the temperatures. 
-     * 
-     * @param args the command line arguments
-     */
+ /**
+ * This main method contains the call to the calcAvg method
+ * used to calculate the average of the temperatures. 
+ * 
+ * @param args the command line arguments
+ */
     public static void main(String[] args) {
         
         Scanner in = new Scanner(System.in);
@@ -33,6 +33,7 @@ public class ClassAssignment1 {
         }
         
         System.out.println(" The average of the temperatures is : " + calcAvg(temps));
+        System.out.println(" This is the highest temperatures of all the given temperatues : " + calcMax(temps));
     }
     public static float calcAvg(int[] temps){
         int sum =0;
@@ -46,5 +47,6 @@ public class ClassAssignment1 {
         }
         return (float) sum/range;
     }
+  
     
 }
