@@ -47,6 +47,15 @@ public class ClassAssignment1 {
         }
         return (float) sum/range;
     }
+    public static int calcMax(int[] temps){
+        int max= temps[0];
   
-    
+         for (int i = 0; i < temps.length; i++){
+             if (temps[i] > max) {
+                 max = temps[i]; 
+             }
+         }
+        return max; 
+    }
+   
 }
